@@ -1,3 +1,6 @@
+/* Fonts */
+@import '@fontsource/hanken-grotesk';
+
 /* Reset stylesheet */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,12 +56,13 @@ table {
 /* Custom styles */
 
 :root {
-    --font-body: Arial, Helvetica, sans-serif;
-    --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    --font-body: "Hanken Grotesk", Helvetica, sans-serif;
+    --font-headline: "Hanken Grotesk", "Arial Narrow Bold", sans-serif;
     /* colors */
-    --primary-color: #f0a868;
-    --secondary-color: #525b0f;
-    --tertiary-color: #a4b8c4;
+    --primary-color: #27AAE1;
+    --secondary-color: #485CC7;
+    --black: #000000;  
+    --white: #ffffff;
     --light-grey: #d0d0d0;
     --dark-grey: #303030;
   
@@ -69,13 +73,18 @@ table {
   }
 
  
+/* Global styles */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
 }
 
+/* Header styles */
+
 .hero-img {
+    grid-column: 1/-1; /* Full width */
     top: 0;
     left: 0;
     width: 100vw; /* Full viewport width */
@@ -84,9 +93,123 @@ table {
     background-size: cover; /* Ensures it covers the space */
     background-position: center;
     background-repeat: no-repeat;
+    display: block;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 #header-logo {
     text-align: center;
     padding-top: 20px;
+    grid-column: 1/13;
+}
+
+nav {
+    font-family: var(--font-body);
+    font-weight: 550;
+    grid-column: 1/13;
+    ul {
+        li {
+            list-style: none;
+            
+            a {
+                text-decoration: none;
+                color: var(--black);
+            }
+        }
+    }
+}
+
+#nav-links {
+    grid-column: 3/11;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+#weather-widget {
+    font-family: var(--font-body);
+    font-weight: 600;
+    padding: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--large-font);
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Discover section styles */
+
+#discover-main-header {
+    grid-column: 1/-1; /* Full width */
+    padding-top: 25px;
+    font-family: var(--font-headline);
+    font-size: 2.5em;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#discover-section {
+    grid-column: 3 / -3; /* Full width */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.seasonal-activity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.seasonal-activity-card div {
+    background-color: var(--light-grey);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-body);
+    font-size: 0.9em;
+    color: var(--dark-grey);
+}
+
+.seasonal-activity-card h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-family: var(--font-headline);
+    font-weight: 550;
+}
+
+/* Main Additional Content */
+
+#additional-content-main {
+    grid-column: 3 / -3; /* Full width */
+    padding: 5px 5px;
+    position: relative;
+    z-index: 2;
+}
+
+#weather-conditions-main-section {
+    grid-column: 1/7;
+}
+
+#tickets-passes-main-section {
+    grid-column: 7/-1;
+}
+
+#lessons-main-section {
+    grid-column: 1/-1;
 }
