@@ -81,6 +81,21 @@ table {
     grid-gap: 20px;
 }
 
+.main-button-style {
+    /* background-color: white;
+    border: #27AAE1 3px solid; */
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-body);
+    font-weight: 500;
+    padding: 5px 10px;
+    font-size: var(--font-base);
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 175px;
+}
+
 /* Header styles */
 
 .hero-img {
@@ -89,7 +104,7 @@ table {
     left: 0;
     width: 100vw; /* Full viewport width */
     height: 50vh; /* Full viewport height */
-    background-image: url('/images/ski-pic-large.jpg');
+    background-image: url('/images/ski-pic-vector-style.jpg');
     background-size: cover; /* Ensures it covers the space */
     background-position: center;
     background-repeat: no-repeat;
@@ -165,6 +180,7 @@ nav {
     padding: 5px 5px;
     position: relative;
     z-index: 2;
+
 }
 
 .seasonal-activity-card {
@@ -200,6 +216,7 @@ nav {
     padding: 5px 5px;
     position: relative;
     z-index: 2;
+    padding-top: 5%;
 }
 
 #weather-conditions-main-section {
@@ -212,4 +229,28 @@ nav {
 
 #lessons-main-section {
     grid-column: 1/-1;
+}
+
+#weather-conditions-main-section img, #tickets-passes-main-section img {
+    width: 90%;
+    height: auto;
+    box-shadow: var(--primary-color) 20px -20px;
+}
+
+#weather-conditions-main-section h2, #tickets-passes-main-section h2 {
+    font-family: var(--font-headline);
+    font-size: 1.5em;
+    color: var(--black);
+    padding-top: 5%;
+}
+
+#weather-conditions-main-section p, #tickets-passes-main-section p {
+    font-family: var(--font-body);
+    font-size: 1em;
+    color: var(--dark-grey);
+    padding-top: 4%;
+}
+
+#weather-conditions-main-section button, #tickets-passes-main-section button {
+    margin-top: 4%;
 }
