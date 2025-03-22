@@ -104,7 +104,7 @@ table {
     left: 0;
     width: 100vw; /* Full viewport width */
     height: 50vh; /* Full viewport height */
-    background-image: url('/images/ski-pic-vector-style.jpg');
+    background-image: url('/images/ski-pic-large.jpg');
     background-size: cover; /* Ensures it covers the space */
     background-position: center;
     background-repeat: no-repeat;
@@ -189,6 +189,10 @@ nav {
     align-items: center;
   }
 
+.seasonal-activity-card img {
+    width: 75%;
+}
+
 .seasonal-activity-card div {
     background-color: var(--light-grey);
     border-radius: 50%;
@@ -217,6 +221,8 @@ nav {
     position: relative;
     z-index: 2;
     padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #weather-conditions-main-section {
@@ -227,30 +233,50 @@ nav {
     grid-column: 7/-1;
 }
 
-#lessons-main-section {
-    grid-column: 1/-1;
+#lessons-main-section, #altitude-news-main-section {
+   
 }
 
-#weather-conditions-main-section img, #tickets-passes-main-section img {
-    width: 90%;
-    height: auto;
-    box-shadow: var(--primary-color) 20px -20px;
+.main-section-cards {
+    width: 40%;
+    padding: 0% 5% 10% 5%;
 }
 
-#weather-conditions-main-section h2, #tickets-passes-main-section h2 {
+.main-section-cards h2 {
     font-family: var(--font-headline);
     font-size: 1.5em;
     color: var(--black);
     padding-top: 5%;
 }
 
-#weather-conditions-main-section p, #tickets-passes-main-section p {
+.main-section-cards p {
     font-family: var(--font-body);
     font-size: 1em;
     color: var(--dark-grey);
     padding-top: 4%;
 }
 
-#weather-conditions-main-section button, #tickets-passes-main-section button {
+.main-section-cards button {
     margin-top: 4%;
+}
+
+.main-section-cards img {
+    width: 90%;
+    height: auto;
+    box-shadow: var(--primary-color) 20px -20px;
+}
+
+/* Footer styles */
+
+#artistic-logo {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 20%;
+    }
+    border: none;
+    border-top: 2px solid #eeeeee;
+    padding: 2.5%;
+    background-color: #fcfcfc;
 }
