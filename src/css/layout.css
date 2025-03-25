@@ -1,0 +1,177 @@
+@import '@fontsource/hanken-grotesk';
+
+/* Reset stylesheet */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Custom styles */
+
+:root {
+    --font-body: "Hanken Grotesk", Helvetica, sans-serif;
+    --font-headline: "Hanken Grotesk", "Arial Narrow Bold", sans-serif;
+    /* colors */
+    --primary-color: #27AAE1;
+    --secondary-color: #485CC7;
+    --black: #000000;  
+    --white: #ffffff;
+    --light-grey: #d0d0d0;
+    --dark-grey: #303030;
+  
+    /* sizes */
+    --font-base: 18px;
+    --small-font: 0.8em;
+    --large-font: 1.2em;
+  }
+
+ 
+/* Global styles */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.main-button-style {
+    /* background-color: white;
+    border: #27AAE1 3px solid; */
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-body);
+    font-weight: 500;
+    padding: 5px 10px;
+    font-size: var(--font-base);
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 175px;
+}
+
+/* Header styles */
+
+.hero-img {
+    grid-column: 1/-1; /* Full width */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 50vh; /* Full viewport height */
+    background-image: url('/images/ski-pic-large.jpg');
+    background-size: cover; /* Ensures it covers the space */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#header-logo {
+    text-align: center;
+    padding-top: 20px;
+    grid-column: 1/13;
+}
+
+nav {
+    font-family: var(--font-body);
+    font-weight: 550;
+    grid-column: 1/13;
+    ul {
+        li {
+            list-style: none;
+            
+            a {
+                text-decoration: none;
+                color: var(--black);
+            }
+        }
+    }
+}
+
+#nav-links {
+    grid-column: 3/11;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+#weather-widget {
+    font-family: var(--font-body);
+    font-weight: 600;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: var(--large-font);
+  }
+  
+  #weather-widget img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Footer styles */
+
+#artistic-logo {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 20%;
+    }
+    border: none;
+    border-top: 2px solid #eeeeee;
+    padding: 2.5%;
+    background-color: #fcfcfc;
+}

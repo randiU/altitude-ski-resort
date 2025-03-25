@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altitude Ski Resort</title>
+</head>
+
+<body>
+    <header class="grid">
+        <div id="header-logo">
+            <img src="/images/altitude-logo-03.svg" alt="Altitude Logo" />
+        </div>
+        <nav class="grid">
+            <ul id="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="activities.html">Seasonal Activities</a></li>
+                <li><a href="weather.html">Conditions</a></li>
+                <li><a href="passes.html">Tickets & Passes</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+            </ul>
+            <div id="weather-widget">
+                <p id="todays-temp">32&deg; </p>
+                <img id="weather-icon" src="" alt="Snowflake Icon" />
+            </div>
+        </nav>
+    </header>
+    <main class="grid">
+        <h1>Seasonal Activities</h1>
+        <section id="discover-section">
+            <!-- Cards will be styled by CSS -->
+            <div class="seasonal-activity-card">
+                <div></div>
+                <h3>Winter</h3>
+            </div>
+            <div class="seasonal-activity-card">
+                <div></div>
+                <h3>Spring</h3>
+            </div>
+            <div class="seasonal-activity-card">
+                <div></div>
+                <h3>Summer</h3>
+            </div>
+            <div class="seasonal-activity-card">
+                <div></div>
+                <h3>Fall</h3>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="/src/js/activities.js"></script>
+    <script type="module" src="/src/js/homeWeather.js"></script>
+</body>
+
+</html>
