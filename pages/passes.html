@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../../src/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altitude Ski Resort | Weather Information</title>
+</head>
+
+<body>
+  <header class="grid">
+    <div id="header-logo">
+      <img src="../../images/altitude-logo-03.svg" alt="Altitude Logo" />
+    </div>
+    <nav class="grid">
+      <ul id="nav-links">
+        <li><a data-page="index.html">Home</a></li>
+        <li><a data-page="pages/activities.html">Seasonal Activities</a></li>
+        <li><a data-page="pages/weather.html">Conditions</a></li>
+        <li><a data-page="pages/passes.html">Tickets & Passes</a></li>
+        <li><a data-page="pages/lessons.html">Lessons</a></li>
+      </ul>
+      <div id="weather-widget">
+        <p id="todays-temp">32&deg; </p>
+        <img id="weather-icon" src="" alt="Snowflake Icon" />
+      </div>
+    </nav>
+  </header>
+  <main class="grid">
+    <h1>Sign Up for a Pass</h1>
+    <form id="pass-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="pass-type">Select Pass:</label>
+      <select id="pass-type">
+        <option value="day">Day Pass</option>
+        <option value="season">Season Pass</option>
+      </select>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </main>
+  <script type="module" src="../../src/js/passes.js"></script>
+  <script type="module" src="../../src/js/homeWeather.js"></script>
+  <script type="module" src="../../src/js/nav.js"></script>
+</body>
+
+</html>
