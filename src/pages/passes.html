@@ -28,23 +28,52 @@
       </div>
     </nav>
   </header>
-  <main class="grid">
-    <h1>Sign Up for a Pass</h1>
-    <form id="pass-form">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" required />
+  <main>
+    <section class="passes-section">
+      <h2>Available Passes</h2>
+      <div class="pass-card">
+        <h3>Day Pass - Half Day</h3>
+        <p>$80</p>
+      </div>
+      <div class="pass-card">
+        <h3>Day Pass - Full Day</h3>
+        <p>$150</p>
+      </div>
+      <div class="pass-card">
+        <h3>Season Pass - Full Season</h3>
+        <p>$2000</p>
+      </div>
+      <div class="pass-card">
+        <h3>Season Pass - Noon and After</h3>
+        <p>$1200</p>
+      </div>
+    </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" required />
+    <section class="form-container">
+      <h2>Choose Your Pass</h2>
+      <form id="pass-form">
+        <label for="pass-type">Select Pass Type:</label>
+        <select id="pass-type" required>
+          <option value="half-day">Day Pass - Half Day - $80</option>
+          <option value="full-day">Day Pass - Full Day - $150</option>
+          <option value="season-full">Season Pass - Full Season - $2000</option>
+          <option value="season-noon">Season Pass - Noon and After - $1200</option>
+        </select>
 
-      <label for="pass-type">Select Pass:</label>
-      <select id="pass-type">
-        <option value="day">Day Pass</option>
-        <option value="season">Season Pass</option>
-      </select>
+        <label for="pass-date">Select Date:</label>
+        <input type="date" id="pass-date" required />
 
-      <button type="submit">Sign Up</button>
-    </form>
+        <div id="pass-price-info"></div>
+
+        <button type="submit">Add to Cart</button>
+      </form>
+    </section>
+
+    <section class="cart-container">
+      <h2>Your Cart</h2>
+      <ul id="cart-list"></ul>
+      <button id="checkout-button">Proceed to Checkout</button>
+    </section>
   </main>
   <script type="module" src="/src/js/passes.js"></script>
   <script type="module" src="/src/js/homeWeather.js"></script>

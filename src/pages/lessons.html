@@ -30,16 +30,52 @@
   </header>
   <main class="grid">
     <h1>Lessons</h1>
-    <section id="lessons-info">
-      <p>We offer beginner and advanced ski and snowboard lessons daily.</p>
-      <ul>
-        <li>❄️ Private Lessons</li>
-        <li>❄️ Group Lessons</li>
-        <li>❄️ Kids' Snow School</li>
-      </ul>
+    <section class="lesson-types">
+      <h2>Available Ski Lessons</h2>
+      <div class="lesson-card">
+        <h3>Children's Lesson</h3>
+        <p>This lesson is designed for children aged 4-12. A fun introduction to skiing with an emphasis on safety and
+          enjoyment. Price: $100</p>
+      </div>
+      <div class="lesson-card">
+        <h3>Beginner Adult Lesson</h3>
+        <p>For adults new to skiing, this lesson covers the basics: how to stop, turn, and gain confidence on beginner
+          slopes. Price: $150</p>
+      </div>
+      <div class="lesson-card">
+        <h3>Advanced Lesson</h3>
+        <p>This lesson is for skiers who want to refine their skills, tackle advanced terrain, and improve technique.
+          Price: $200</p>
+      </div>
+    </section>
+
+    <section class="form-container">
+      <h2>Book Your Lesson</h2>
+      <form id="lesson-form">
+        <label for="lesson-type">Choose Lesson Type:</label>
+        <select id="lesson-type" required>
+          <option value="children">Children's Lesson - $100</option>
+          <option value="beginner">Beginner Adult Lesson - $150</option>
+          <option value="advanced">Advanced Lesson - $200</option>
+        </select>
+
+        <label for="lesson-date">Select Date:</label>
+        <input type="date" id="lesson-date" required />
+
+        <div id="price-info"></div>
+
+        <button type="submit">Add to Cart</button>
+      </form>
+    </section>
+
+    <section class="cart-container">
+      <h2>Your Cart</h2>
+      <ul id="cart-list"></ul>
+      <button id="checkout-button">Proceed to Checkout</button>
     </section>
   </main>
   <script type="module" src="/src/js/homeWeather.js"></script>
+  <script type="module" src="/src/js/lessons.js"></script>
 </body>
 
 </html>
