@@ -1,4 +1,5 @@
-const activitiesJson = '/json/activities.json';
+// const activitiesJson = '/json/activities.json';
+const activitiesJson = `${import.meta.env.BASE_URL}json/activities.json`;
 
 fetch(activitiesJson)
   .then(response => response.json())
