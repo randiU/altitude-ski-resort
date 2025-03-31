@@ -26,7 +26,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/altitude-ski-resort/', 
+  base: '/', 
   build: {
     rollupOptions: {
       input: {
