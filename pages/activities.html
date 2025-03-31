@@ -6,7 +6,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="/src/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Altitude Ski Resort | Weather Information</title>
+    <title>Altitude Ski Resort</title>
 </head>
 
 <body>
@@ -16,11 +16,11 @@
         </div>
         <nav class="grid">
             <ul id="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/activities.html">Seasonal Activities</a></li>
-                <li><a href="/pages/weather.html">Conditions</a></li>
-                <li><a href="/pages/passes.html">Tickets & Passes</a></li>
-                <li><a href="/pages/lessons.html">Lessons</a></li>
+                <li><a href="../index.html">Home</a></li> 
+                <li><a href="./activities.html">Seasonal Activities</a></li> 
+                <li><a href="./weather.html">Conditions</a></li> 
+                <li><a href="./passes.html">Tickets & Passes</a></li> 
+                <li><a href="./lessons.html">Lessons</a></li> 
             </ul>
             <div id="weather-widget">
                 <p id="todays-temp">32&deg; </p>
@@ -29,18 +29,12 @@
         </nav>
     </header>
     <main class="grid">
-        <h1>Altitude Ski Resort Weather</h1>
-        <section id="current-conditions">
-            <h2>Current Conditions</h2>
-            <div id="current-weather"></div>
-        </section>
-
-        <section id="forecast-section">
-            <h2>3-Day Forecast</h2>
-            <div id="forecast-cards" class="grid"></div>
+        <h1>Seasonal Activities</h1>
+        <section class="activity-section" id="activity-section">
+            <!--Activities are dynamically loaded here using the activities.js file.-->
         </section>
     </main>
-    <script type="module" src="/src/js/weather.js"></script>
+    <script type="module" src="/src/js/activities.js"></script>
     <script type="module" src="/src/js/homeWeather.js"></script>
 </body>
 
