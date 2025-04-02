@@ -1,0 +1,51 @@
+#activities-main-content h1{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 2em;;
+    padding-top: 1.5%;
+}
+
+#activity-section {
+    grid-column: 3/-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+#activity-section h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#activity-section .activity-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid var(--primary-color);
+    box-shadow: var(--primary-color) 10px -10px;
+    background-color: var(--card-background-color);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    font-family: var(--font-body);
+}
+
+.activity-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}

@@ -11,8 +11,8 @@ fetch(activitiesJson)
       card.classList.add('activity-card');
       
       card.innerHTML = `
-        <h3>${activity.name}</h3>
         <img src="${activity.image}" alt="${activity.name}">
+        <h3>${activity.name}</h3>
         <p>${activity.description}</p>
       `;
 

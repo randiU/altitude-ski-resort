@@ -3,6 +3,7 @@ const city = "Park City, Utah";
 const days = 3;
 
 const endpoint = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=${days}&aqi=no&alerts=no`;
+console.log("API Key: ", apiKey);
 
 
 //Formats dates into a more readable format

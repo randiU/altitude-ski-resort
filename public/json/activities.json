@@ -1,16 +1,24 @@
 [
     {
-      "name": "Winter Skiing",
-      "description": "This activity is ideal for winter enthusiasts. Enjoy the slopes and experience the thrill of skiing at Altitude Ski Resort."
+      "name": "Winter: Skiing, Snowboarding & Snowshoeing",
+      "image": "/images/winter-activities-img.jpg",
+      "description": "Altitude Ski Resort offers something for everyone this winter. Skiers and snowboarders can enjoy a range of slopes, from beginner to advanced, while taking in stunning mountain views. For a more peaceful experience, explore the resort’s snowshoeing trails, perfect for those looking to immerse themselves in nature. Whether you're seeking excitement or relaxation, Altitude Ski Resort is the perfect winter getaway."
       
     },
     {
-      "name": "Summer Hiking",
-      "description": "Explore the beautiful terrain of Altitude Ski Resort in the summer. Hiking through the resort is a refreshing experience."
+      "name": "Spring: Mountain Biking, Hiking, and Ziplining",
+      "image": "/images/mountain-biking-img.jpg",
+      "description": "In the spring, our ski resort offers exciting outdoor adventures for all ages. Enjoy the thrill of mountain biking as you race down scenic trails, or hike through the lush mountain landscapes to take in the breathtaking views and vibrant wildflowers. For those seeking an adrenaline rush, soar across the treetops with ziplining, taking in panoramic views of the mountain while flying high above the ground."
       
     },
     {
-      "name": "Snowboarding",
-      "description": "Get ready for snowboarding in the best possible conditions. Perfect for adventurers looking for an exciting ride."
-    }
+      "name": "Summer: Festivals and Gondola Rides",
+      "image": "/images/festival-img.jpg",
+      "description": "During the summer, our ski resort transforms into a vibrant hub of outdoor excitement and culture. Enjoy a scenic gondola ride to the top of the mountain, where you can take in stunning panoramic views and enjoy the fresh alpine air. Our summer festivals bring a lively atmosphere to the resort, featuring live music, local food vendors, and activities for the whole family. Our summer activities offer the perfect blend of adventure and relaxation."
+    },
+    {
+        "name": "Fall: Wellness Retreats and Scenic Hikes",
+        "image": "/images/hiking-img.jpg",
+        "description": "Embrace the beauty of fall with mountain yoga, wellness retreats, and hiking at the resort. Enjoy vibrant autumn views as you hike along scenic trails, taking in the crisp air and colorful landscapes. For a more peaceful experience, join our mountain yoga and wellness retreats, offering a blend of relaxation and mindfulness in nature. Whether hiking or practicing yoga surrounded by fall foliage, it’s the perfect way to rejuvenate and connect with the season’s calm beauty."
+      }
   ]
