@@ -45,3 +45,12 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @media (max-width: 768px) {
+
+    #current-conditions,
+    #forecast-section {
+      margin-top: 10%;
+    }
+
+  }

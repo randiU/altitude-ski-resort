@@ -21,6 +21,13 @@
 
 }
 
+.discover-link {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: var(--black);
+}
+
 .seasonal-activity-card {
     display: flex;
     flex-direction: column;
@@ -106,6 +113,10 @@
 
 
 @media (max-width: 768px) {
+
+    .discover-link {
+        justify-content: center;
+    }
 
     #discover-main-header {
         font-size: 1.5em;

@@ -225,6 +225,14 @@ table {
     #weather-widget {
       display: none;
     }
+
+    footer {
+      padding: 30px 0 30px 0;
+    }
+
+    #artistic-logo img {
+      width: 40%;
+    }
   }
   
   /* Show menu items inline for larger screens */

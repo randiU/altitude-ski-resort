@@ -34,22 +34,24 @@
     </div>
     <h1 id="discover-main-header">Discover Altitude Ski Resort</h1>
     <section id="discover-section">
-      <div class="seasonal-activity-card" id="winter-activity-card">
-        <img src="/images/winter-icon-02.svg" alt="Winter Icon" />
-        <h3>Winter Activities</h3>
-      </div>
-      <div class="seasonal-activity-card" id="summer-activity-card">
-        <img src="/images/summer-icon-05.svg" alt="Summer Icon" />
-        <h3>Summer Activities</h3>
-      </div>
-      <div class="seasonal-activity-card" id="fall-activity-card">
-        <img src="/images/fall-icon-04.svg" alt="Fall Icon" />
-        <h3>Fall Activities</h3>
-      </div>
-      <div class="seasonal-activity-card" id="spring-activity-card">
-        <img src="/images/spring-icon-03.svg" alt="Spring Icon" />
-        <h3>Spring Activities</h3>
-      </div>
+      <a href="./pages/activities.html" class="discover-link">
+        <div class="seasonal-activity-card" id="winter-activity-card">
+          <img src="/images/winter-icon-02.svg" alt="Winter Icon" />
+          <h3>Winter Activities</h3>
+        </div>
+        <div class="seasonal-activity-card" id="summer-activity-card">
+          <img src="/images/summer-icon-05.svg" alt="Summer Icon" />
+          <h3>Summer Activities</h3>
+        </div>
+        <div class="seasonal-activity-card" id="fall-activity-card">
+          <img src="/images/fall-icon-04.svg" alt="Fall Icon" />
+          <h3>Fall Activities</h3>
+        </div>
+        <div class="seasonal-activity-card" id="spring-activity-card">
+          <img src="/images/spring-icon-03.svg" alt="Spring Icon" />
+          <h3>Spring Activities</h3>
+        </div>
+      </a>
     </section>
     <section id="additional-content-main">
       <div id="weather-conditions-main-section" class="main-section-cards">
@@ -57,15 +59,17 @@
         <h2>Weather Conditions</h2>
         <p>Check the ski resort's weather conditions before heading out, including snowfall, temperature, wind, and
           visibility, to ensure a great day on the slopes.</p>
-        <button class="main-button-style">Check Weather</button>
+        <button class="main-button-style" onclick="window.location.href='./pages/weather.html'">Check Weather</button>
       </div>
+
       <div id="tickets-passes-main-section" class="main-section-cards">
         <img src="/images/chair-lift.jpg" alt="People by a chairlift." />
         <h2>Tickets & Passes</h2>
         <p>Ski resorts offer day passes for single visits and season passes for unlimited access. Season passes are
           ideal for frequent skiers, often with added perks.</p>
-        <button class="main-button-style">Get Pass</button>
+        <button class="main-button-style" onclick="window.location.href='./pages/passes.html'">Get Pass</button>
       </div>
+
       <div id="lessons-main-section" class="main-section-cards">
         <img src="/images/lessons.jpg" alt="Instructor teaching a student how to ski." />
         <h2>Lessons</h2>
@@ -74,8 +78,9 @@
           slopes. Professional instruction speeds up learning and helps experienced riders refine their skills. Group
           and private lessons are available for all levels, making them a valuable investment for a better experience.
         </p>
-        <button class="main-button-style">Book Lessons</button>
+        <button class="main-button-style" onclick="window.location.href='./pages/lessons.html'">Book Lessons</button>
       </div>
+
       <div id="altitude-news-main-section" class="main-section-cards">
         <img src="/images/news.jpg" alt="Man doing long ski jump" />
         <h2>Altitude News</h2>
