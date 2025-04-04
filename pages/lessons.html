@@ -28,7 +28,7 @@
       </div>
     </nav>
   </header>
-  <main class="grid">
+  <main class="grid" id="lessons-main">
     <h1>Lessons</h1>
     <section class="lesson-types">
       <h2>Available Ski Lessons</h2>
@@ -49,7 +49,7 @@
       </div>
     </section>
 
-    <section class="form-container">
+    <section class="form-container" id="lesson-booking-form">
       <h2>Book Your Lesson</h2>
       <form id="lesson-form">
         <label for="lesson-type">Choose Lesson Type:</label>
@@ -64,16 +64,19 @@
 
         <div id="price-info"></div>
 
-        <button type="submit">Add to Cart</button>
+        <button type="submit" id="lesson-add-to-cart-button">Add to Cart</button>
       </form>
     </section>
 
-    <section class="cart-container">
+    <section class="cart-container" id="lesson-cart-container">
       <h2>Your Cart</h2>
       <ul id="cart-list"></ul>
       <button id="checkout-button">Proceed to Checkout</button>
     </section>
   </main>
+  <footer id="artistic-logo">
+    <img src="/images/altitude-art-logo-02.png" alt="Altitude logo with mountains inside of it." />
+  </footer>
   <script type="module" src="/src/js/homeWeather.js"></script>
   <script type="module" src="/src/js/lessons.js"></script>
 </body>

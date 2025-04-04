@@ -81,8 +81,6 @@ table {
 }
 
 .main-button-style {
-    /* background-color: white;
-    border: #27AAE1 3px solid; */
     background-color: var(--primary-color);
     color: white;
     font-family: var(--font-body);
@@ -98,13 +96,13 @@ table {
 /* Header styles */
 
 .hero-img {
-    grid-column: 1/-1; /* Full width */
+    grid-column: 1/-1; 
     top: 0;
     left: 0;
-    width: 100vw; /* Full viewport width */
-    height: 50vh; /* Full viewport height */
+    width: 100vw; 
+    height: 50vh; 
     background-image: url('/images/ski-pic-large.jpg');
-    background-size: cover; /* Ensures it covers the space */
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     display: block;
@@ -122,35 +120,31 @@ table {
     grid-column: 1/13;
 }
 
-nav {
+  nav {
     font-family: var(--font-body);
     font-weight: 550;
     grid-column: 1/13;
-}
-
-nav ul li{
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--black);
-    padding-bottom: 5px;
     position: relative;
-    display: inline-block;
-    padding-bottom: 5px;  
-    transition: color 0.3s ease;
-}
-
-#nav-links {
+  }
+  
+  #nav-links {
     grid-column: 3/11;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 25px 0;
-}
-
-#nav-links a::after {
+  }
+  
+  #nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    padding-bottom: 5px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  #nav-links a::after {
     content: '';
     position: absolute;
     bottom: 0; 
@@ -160,12 +154,12 @@ nav ul li a {
     background-color: var(--primary-color); 
     transition: width 0.3s ease; 
   }
-
+  
   #nav-links a:hover::after {
     width: 100%; 
   }
-
-#weather-widget {
+  
+  #weather-widget {
     font-family: var(--font-body);
     font-weight: 600;
     padding-top: 5px;
@@ -194,4 +188,56 @@ nav ul li a {
     border-top: 2px solid #eeeeee;
     padding: 2.5%;
     background-color: #fcfcfc;
+    margin-top: 3%;
 }
+
+/*responsive design*/
+
+@media (max-width: 768px) {
+    #nav-links {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff; 
+      position: absolute;
+      top: 30px; 
+      left: 0;
+      right: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+  
+    /* Show the hamburger menu button */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: var(--black);
+        position: absolute; 
+        top: -60px; 
+        right: 20px; 
+      }
+  
+    #nav-links.open {
+      display: flex;
+    }
+
+    #weather-widget {
+      display: none;
+    }
+  }
+  
+  /* Show menu items inline for larger screens */
+  @media (min-width: 769px) {
+
+    #nav-links {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      padding: 25px 0;
+    }
+  
+    .hamburger-menu {
+      display: none; 
+    }
+  }

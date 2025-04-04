@@ -1,7 +1,7 @@
 /* Discover section styles */
 
 #discover-main-header {
-    grid-column: 1/-1; /* Full width */
+    grid-column: 1/-1; 
     padding-top: 25px;
     font-family: var(--font-headline);
     font-size: 2.5em;
@@ -11,7 +11,7 @@
 }
 
 #discover-section {
-    grid-column: 3 / -3; /* Full width */
+    grid-column: 3 / -3; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -54,7 +54,7 @@
 /* Main Additional Content */
 
 #additional-content-main {
-    grid-column: 3 / -3; /* Full width */
+    grid-column: 3 / -3; 
     padding: 5px 5px;
     position: relative;
     z-index: 2;
@@ -103,3 +103,62 @@
     height: auto;
     box-shadow: var(--primary-color) 20px -20px;
 }
+
+
+@media (max-width: 768px) {
+
+    #discover-main-header {
+        font-size: 1.5em;
+        padding-top: 10px;
+    }
+
+    #discover-section {
+        grid-column: 1/-1; 
+        padding: 0px 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #discover-section img {
+        width: 80%;
+        margin: auto;
+    }
+
+    #discover-section h3 {
+        margin-bottom: 8%;
+        padding-top: 10px;
+    }
+   #discover-section {
+    grid-column: 1/-1; 
+    padding: 0px 5px;
+    justify-content: center;
+    align-items: center;
+   }
+
+   #discover-section img {
+    width: 60%;
+    margin: auto;
+   }
+
+   #discover-section h3 {
+    margin-bottom: 8%;
+    padding-top: 10px;
+   }
+
+   .main-section-cards {
+    width: 90%;
+    padding: 0% 5% 10% 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+
+   .main-section-cards button {
+    margin-top: 25px;
+   }
+  }
+  
+  /* Show menu items inline for larger screens */
+  @media (min-width: 769px) {
+
+    
+  }

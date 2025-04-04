@@ -31,13 +31,15 @@ function renderCurrent(current, location) {
   const container = document.getElementById("current-weather");
 
   container.innerHTML = `
+  <div class="weather-card">
     <p><strong>${location.name}, ${location.region}</strong></p>
     <p>${current.temp_f}&deg;F / ${current.temp_c}&deg;C</p>
     <p>${current.condition.text}</p>
     <img src="https:${current.condition.icon}" alt="${current.condition.text}" />
     <p>Feels like: ${current.feelslike_f}&deg;F</p>
     <p>Wind: ${current.wind_mph} mph</p>
-  `;
+  </div>
+`;
 }
 
 function renderForecast(forecastDays) {

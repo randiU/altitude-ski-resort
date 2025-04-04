@@ -15,6 +15,7 @@
       <img src="/images/altitude-logo-03.svg" alt="Altitude Logo" />
     </div>
     <nav class="grid">
+      
       <ul id="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="./activities.html">Seasonal Activities</a></li>
@@ -28,9 +29,10 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main id="passes-main">
+    <h1>Altitude Ski Resort Passes</h1>
     <section class="passes-section">
-      <h2>Available Passes</h2>
+
       <div class="pass-card">
         <h3>Day Pass - Half Day</h3>
         <p>$80</p>
@@ -65,7 +67,7 @@
 
         <div id="pass-price-info"></div>
 
-        <button type="submit">Add to Cart</button>
+        <button type="submit" id="passes-add-to-cart-button">Add to Cart</button>
       </form>
     </section>
 
@@ -75,6 +77,9 @@
       <button id="checkout-button">Proceed to Checkout</button>
     </section>
   </main>
+  <footer id="artistic-logo">
+    <img src="/images/altitude-art-logo-02.png" alt="Altitude logo with mountains inside of it." />
+  </footer>
   <script type="module" src="/src/js/passes.js"></script>
   <script type="module" src="/src/js/homeWeather.js"></script>
 </body>

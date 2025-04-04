@@ -1,0 +1,60 @@
+#lessons-main {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-body);
+}
+
+#lessons-main h1 {
+    text-align: center;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 2em;;
+    padding-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.lesson-types {
+    width: 60%;
+    margin: auto;
+    border: 3px solid var(--primary-color);
+    padding: 2.5%;
+    box-shadow: var(--primary-color) 10px -10px;
+}
+
+#lessons-main h2 {
+    text-align: center;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.2em;;
+    margin-bottom: 1.5%;
+}
+
+#lessons-main h3{
+    font-family: var(--font-body);
+    font-weight: 600;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+#lessons-main p {
+    margin-bottom: 1%;
+}
+
+#lesson-add-to-cart-button {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Booking Section Styling */
+
+#lesson-booking-form, #lesson-cart-container {
+    width: 60%;
+    margin: auto;
+    padding: 2.5%;
+}
+
+#checkout-button {
+    font-weight: 600;
+    font-family: var(--font-body);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
